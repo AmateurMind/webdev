@@ -1,6 +1,143 @@
 /*comment: This is a CSS file for styling the HTML document(similar to c++)*/
 
 body {
-    background-color: rgb(185, 205, 163);
+    background-color: aliceblue;
 
 }
+#welcome {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    opacity:0.9;
+    background-image: url('https://www.simplilearn.com/ice9/free_resources_article_thumb/The_Future_of_Robotics.jpg');
+    background-position: right top;
+}
+.heading{
+    margin-left:75%;
+    margin-top: auto;
+    /*we can use % for full page and px for specific size*/
+    color:rgb(0, 0, 0);
+    border-style: solid;
+    border-width:10px 15px 25px 5px;
+    border-color: rgb(122, 71, 71) rgb(68, 159, 73) rgb(140, 136, 22) rgb(55, 58, 239);
+    border-radius: 20px;
+    padding-top: 20px;
+}
+#hello{
+    font-size: 20;
+    height: 25px;
+    padding:auto;
+    width: 100%;
+    background-color: rgb(204, 40, 204);
+    outline-style: dashed;  
+    text-decoration: underline;
+    text-align-last:center ;/*last line of text in a block element is aligned to the center*/
+    font-family: Arial, sans-serif; /*Arial is a font family, sans-serif is a fallback*/
+    font-style: italic; /*Italic style for the text*/
+    font-weight: bold; /*Bold weight for the text*/
+    font-size: 1em; /*1em is a relative unit, equal to the font size of the element 1em=16px */
+}
+
+.material-icons{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}
+
+table,th,td{
+    border: 1px solid black;
+    width:auto;
+    border-collapse: collapse; /* Collapses the borders of the table */
+    padding: 10px; /* Adds padding inside table cells */
+    text-align: center; /* Centers the text in table cells */
+
+}
+tr:hover{
+    background-color: rgb(71, 145, 145);
+}
+
+.dropdownbutton {
+    background-color: rgb(255, 221, 228);
+    color:rgb(58, 38, 9);
+    padding:12px;
+    font-size: 14px;
+    border: none;
+    cursor:pointer;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: rgb(180, 171, 157);
+    min-width:150px;
+}
+.dropdown-menu a {
+    color: rgb(0, 0, 0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-menu a:hover {
+    background-color: rgb(255, 248, 248);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Shows the dropdown menu on hover */
+}
+.dropdown:hover .dropdownbutton {
+    background-color: rgb(222, 119, 130); /* Changes the button color on hover */
+}
+/* 
+-*{
+    color:blueviolet
+}
+affects all elements
+
+-In CSS, MARGIN is the space outside an element — it creates space between the element and its surroundings (other elements).
+
+✅ Basic Syntax:
+css
+Copy
+Edit
+selector {
+  margin: 20px;
+}
+This applies 20px space on all four sides (top, right, bottom, left).
+
+
+margin: 20px;              // All sides
+margin: 10px 20px;         // Top-Bottom | Left-Right
+margin: 10px 15px 20px;    // Top | Left-Right | Bottom
+margin: 5px 10px 15px 20px; // Top | Right | Bottom | Left
+---------------------------------------------------------------------------(same in border and padding) //top right bottom left
+margin-top: 20px;         // Top only
+
+---------------------------------border: is a line that goes around an element, inside the margin and outside the padding. 
+---------------------------------It can be styled with different colors, widths, and styles (solid, dashed, dotted, etc.).
+
+---------------------------------outline: is a line that is drawn around an element, outside the border, to make the element stand out. 
+---------------------------------It does not take up space and does not affect the layout of the page.
+
+---------------------------------alignment: is the process of positioning elements in relation to each other or the page.
+
+---------------------------------text-decoration: is a way to add visual effects to text, such as underlining, overlining,line through.
+
+
+
+3 in one selector
+h1, a, p{
+    text-indent: 20px; adds space before the text
+    text-transform: uppercase; converts text to uppercase  
+    capitalize; converts the first letter of each word to uppercase
+    letter-spacing: 2px; adds space between letters
+    word-spacing: 5px; adds space between words
+
+-------------------------------display none and visibility hidden
+display: none; hides the element and removes it from the layout, so it does not take up any space.  
+visibility: hidden; hides the element but keeps it in the layout, so it still takes up space.
+*/
